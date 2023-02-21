@@ -7,4 +7,4 @@
 - &nbsp; D. Anastasya Hutapea
 - &nbsp; Nisa Noor Amalia
 - &nbsp; Sabrina Diza Melinda (Github : https://github.com/sabrinadizam21 )
-- &nbsp; Ikhsan Nur Syahbanu
+- &nbsp; Ikhsan Nur Syahbanu (Github : https://github.com/ikhsansyahbanu )
