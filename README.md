@@ -6,5 +6,5 @@
 - &nbsp; Jayadiwalsa
 - &nbsp; D. Anastasya Hutapea
 - &nbsp; Nisa Noor Amalia
-- &nbsp; Sabrina Diza Melinda
+- &nbsp; Sabrina Diza Melinda (Github : https://github.com/sabrinadizam21
 - &nbsp; Ikhsan Nur Syahbanu
