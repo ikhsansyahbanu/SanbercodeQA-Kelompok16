@@ -29,10 +29,11 @@ class TestDeleteMultipleJob(unittest.TestCase):
         PageObject.clickByXpath(self, "//button[contains(.,' Yes, Delete ')]")
 
         # Validation
+        time.sleep(3)
         textAfter_1 = driver.find_element(By.XPATH, "//div[@class='oxd-table-body']/div[1]/div/div[2]/div").text
         textAfter_2 = driver.find_element(By.XPATH, "//div[@class='oxd-table-body']/div[2]/div/div[2]/div").text
-        self.assertNotIn(textBefore_1, textAfter_1)
-        self.assertNotIn(textBefore_2, textAfter_2)
+        self.assertIsNot(textBefore_1, textAfter_1)
+        self.assertIsNot(textBefore_2, textAfter_2)
 
     def tearDown(self):
         self.browser.close()

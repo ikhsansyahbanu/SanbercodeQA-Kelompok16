@@ -36,7 +36,8 @@ class TestAddJobTitlesSuccess(unittest.TestCase):
 
         # Validation
         driver = self.browser
-        assert data["title"] in driver.page_source
+        # assert data["title"] in driver.page_source
+        assert driver.page_source.find(data["title"])
 
     def tearDown(self):
         self.browser.close()

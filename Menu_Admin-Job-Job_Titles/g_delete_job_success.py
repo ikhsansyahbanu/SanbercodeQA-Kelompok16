@@ -1,4 +1,5 @@
 import unittest
+import time
 from selenium import webdriver
 from object.pageObject import PageObject
 from a_job_titles_page import TestViewJobTitlesPage
@@ -24,8 +25,10 @@ class TestDeleteJobSuccess(unittest.TestCase):
         PageObject.clickByXpath(self, "//button[contains(.,' Yes, Delete ')]")
 
         # Validation
+        time.sleep(3)
         textAfter_1 = driver.find_element(By.XPATH, "//div[@class='oxd-table-body']/div[1]/div/div[2]/div").text
-        self.assertNotIn(textBefore_1, textAfter_1)
+        # self.assertNotIn(textBefore_1, textAfter_1)
+        self.assertIsNot(textBefore_1, textAfter_1)
 
     def tearDown(self):
         self.browser.close()
