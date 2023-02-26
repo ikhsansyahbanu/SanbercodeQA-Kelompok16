@@ -27,7 +27,6 @@ class TestDeleteJobSuccess(unittest.TestCase):
         # Validation
         time.sleep(3)
         textAfter_1 = driver.find_element(By.XPATH, "//div[@class='oxd-table-body']/div[1]/div/div[2]/div").text
-        # self.assertNotIn(textBefore_1, textAfter_1)
         self.assertIsNot(textBefore_1, textAfter_1)
 
     def tearDown(self):
